@@ -1,0 +1,71 @@
+.container {
+    text-align: center;
+    margin-top: 50px; /* Üst boşluk */
+}
+
+.title {
+    color: antiquewhite;
+    font-size: 24px; /* Başlık boyutu */
+}
+
+.title span {
+    color: aquamarine;
+}
+
+.reset {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Düğme ile başlık arasındaki boşluk */
+    transition: background-color 0.3s ease; /* Düğme üzerine geldiğinde yumuşak geçiş */
+}
+
+.reset:hover {
+    background-color: #8ee4af; /* Hover durumunda arka plan rengi */
+}
+
+.boxes {
+    height: 100px;
+    width: 100px;
+    background-color: #211f35;
+    border: 4px solid pink;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-flex; /* İçeriğin yan yana gelmesi için */
+    justify-content: center; /* İçeriğin yatayda ortalanması için */
+    align-items: center; /* İçeriğin dikeyde ortalanması için */
+}
+
+.boxes:hover {
+    background-color: #3a3757; /* Hover durumunda arka plan rengi */
+}
+
+@media (max-width: 768px) {
+    /* Mobil cihazlar için stil ayarları */
+    .container {
+        margin-top: 20px; /* Mobil cihazlar için daha az üst boşluk */
+    }
+
+    .title {
+        font-size: 20px; /* Başlık boyutunu küçült */
+    }
+
+    .reset {
+        margin-top: 10px; /* Mobil cihazlar için daha az üst boşluk */
+    }
+
+    .boxes {
+        height: 80px; /* Mobil cihazlar için daha küçük kutu boyutları */
+        width: 80px; /* Mobil cihazlar için daha küçük kutu boyutları */
+        margin: 5px; /* Mobil cihazlar için daha küçük kenar boşlukları */
+    }
+}
+
+.board {
+    max-width: 400px; /* Maksimum board genişliği */
+    margin: 0 auto; /* Merkezi hizalama */
+}
